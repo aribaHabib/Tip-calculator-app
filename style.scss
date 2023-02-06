@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.rootElement {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-color:  hsl(185, 41%, 84%);
+}
+.flexbox{
+    max-width: 800px;
+    margin: 80px auto 150px ;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 35px;
+    gap: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.flexbox1 {
+    display: flex;
+    flex-direction: column;
+    min-width: 50px;
+}
+h1{
+    text-align: center;  
+    color: black;  
+    padding: 20px;
+}  
+.flexbox1 label{
+    color: hsl(186, 14%, 43%);
+    padding-top: 20px;
+}
+.input-field input{
+    width: 300px;  
+    height: 35px;  
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    color:  hsl(183, 100%, 15%);
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    text-align: right;
+}
+input:hover{
+    outline: 2px solid hsl(172, 67%, 45%);
+}
+::placeholder{
+    color: hsl(184, 14%, 56%);
+}
+.input-field{
+    padding: 5px 0 20px 0;
+    position: relative;
+}
+.icon{
+    padding: 10px 10px 10px 15px;
+    position: absolute;
+}
+.tipBtns{
+    padding: 10px 0 5px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tip-btn{
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    width: 90px;
+    height: 35px;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+.custom-btn{
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    width: 90px;
+    height: 35px;
+    color: hsl(183deg, 100%, 15%);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: right;
+}
+.custom-btn:hover {
+   outline: 2px solid hsl(172, 67%, 45%);
+}
+.tip-btn:hover {
+    background-color:  hsl(185, 41%, 84%);
+    color: black;
+}
+.logo{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.labelMsg{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#error{
+    color: rgb(230, 103, 103);
+    font-size: 12px;
+}
+.flexbox2 {
+    background-color: hsl(183, 100%, 15%);
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .tip-amount{
+ 
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px 0 15px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+
+    .txt h6{
+        color: #FFFFFF;
+    }
+    .txt p{
+        color: hsl(186, 14%, 43%);
+        font-size: 15px;
+    }
+    .bill h6{
+        color: hsl(172, 67%, 45%);
+        font-size: 30px;
+    }
+  }
+  .reset {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    }
+    .reset-btn {
+    border: none;
+    width: 300px;
+    height: 45px;
+    background:   hsl(172, 67%, 45%);
+    border-radius: 5px;
+}
+.reset-btn:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+@media (max-width:734px) {
+    .flexbox{
+        max-width: 500px;
+        margin: 50px auto 100px ;
+        justify-content:space-around;
+    }
+    .tip-amount{
+        padding: 20px 0 0 0;
+    }
+    .reset {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        }
+}
